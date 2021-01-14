@@ -1,0 +1,35 @@
+<resources>
+    <array name="pref_colors">
+        <item>Синий</item>
+        <item>Зеленый</item>
+        <item>Красный</item>
+    </array>
+    <string name="pref_color_switch">Переназначить цвет?</string>
+    <string name="pref_color_switch_summ">Использовать нестандартный цвет из списка ниже?</string>
+    <string name="pref_color_title">Выберите цвет</string>
+    <string name="pref_color_red">Красный</string>
+    <string name="app_name">Lab1POMS</string>
+    <string name="hello">Здравствуйте, </string>
+    <string name="welcome">Добро пожаловать в приложение!</string>
+    <string name="switchFragment">Сменить фрагмент</string>
+    <string name="enter_your_last_name">Введите свою фамлию</string>
+    <string name="enter_your_name">Введите свое имя</string>
+    <string name="buttonEnter">Ввод</string>
+    <string name="_1">Кнопка чтобы была 1</string>
+    <string name="_2">Кнопка чтобы была 2</string>
+    <string name="_3">Кнопка чтобы была 3</string>
+    <string name="_4">Кнопка чтобы была 4</string>
+    <string name="enterX">Введите X</string>
+    <string name="enterY">Введите Y</string>
+    <string name="sum">Сумма</string>
+    <string name="radix">Корни</string>
+    <string name="history">История</string>
+    <string name="error">Заполните оба поля</string>
+    <string name="hello_blank_fragment">Здравие от пустого фрагмента</string>
+    <string name="two_fragments">Два фрагмента</string>
+    <string name="showHistory">Вывести</string>
+    <string name="entered">Вы ввели: </string>
+    <string name="result">Ваш результат: </string>
+    <string name="ServicesAndIntentions">Службы и намерения</string>
+    <string name="counted_to">Counted to %d</string>
+</resources>

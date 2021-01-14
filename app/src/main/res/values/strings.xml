@@ -1,0 +1,37 @@
+<resources>
+    <array name="pref_colors">
+        <item>Blue</item>
+        <item>Green</item>
+        <item>Red</item>
+    </array>
+    <string name="pref_color_switch">Override color?</string>
+    <string name="pref_color_key" translatable="false">pref_color</string>
+    <string name="pref_color_key_switch" translatable="false">pref_color_switch</string>
+    <string name="pref_color_switch_summ">Use non-default color from list below?</string>
+    <string name="pref_color_title">Choose color</string>
+    <string name="pref_color_red">Red</string>
+    <string name="app_name">Lab1POMS</string>
+    <string name="hello">Hello, </string>
+    <string name="welcome">Welcome to the app!</string>
+    <string name="switchFragment">Switch fragment</string>
+    <string name="enter_your_last_name">Enter your last name</string>
+    <string name="enter_your_name">Enter your name</string>
+    <string name="buttonEnter">Enter</string>
+    <string name="_1">Button to be 1</string>
+    <string name="_2">Button to be 2</string>
+    <string name="_3">Button to be 3</string>
+    <string name="_4">Button to be 4</string>
+    <string name="enterX">Enter X</string>
+    <string name="enterY">Enter Y</string>
+    <string name="sum">Sum</string>
+    <string name="radix">radix</string>
+    <string name="history">History</string>
+    <string name="error">Please fill in both fields</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="two_fragments">Two fragments</string>
+    <string name="showHistory">Show</string>
+    <string name="entered">You entered: </string>
+    <string name="result">Your result: </string>
+    <string name="ServicesAndIntentions">Services and intentions</string>
+    <string name="counted_to"> to %d</string>
+</resources>
