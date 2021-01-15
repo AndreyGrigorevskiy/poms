@@ -12,7 +12,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".view.SharedPreferencesActivity"></activity>
+        <activity android:name=".view.AnimationActivity"></activity>
+        <activity android:name=".view.SharedPreferencesActivity" />
         <activity android:name=".view.DataBaseActivity" />
         <activity android:name=".view.FileActivity" />
         <activity android:name=".view.CallCatcher" />

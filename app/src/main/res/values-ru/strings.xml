@@ -32,4 +32,9 @@
     <string name="result">Ваш результат: </string>
     <string name="ServicesAndIntentions">Службы и намерения</string>
     <string name="counted_to">Counted to %d</string>
+    <string name="rotate">Повернуть</string>
+    <string name="scale">Масштаб</string>
+    <string name="move">Перемещение</string>
+    <string name="alpha">Прозрачность</string>
+    <string name="anim">Анимация</string>
 </resources>

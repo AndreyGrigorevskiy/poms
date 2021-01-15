@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.AnimationActivity">
+
+    <ImageView
+        android:id="@+id/imageViewHeal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="25"
+        app:srcCompat="@android:drawable/ic_input_add" />
+
+    <Button
+        android:id="@+id/buttonRotate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/rotate"
+        android:layout_weight="1"/>
+
+    <Button
+        android:id="@+id/buttonScale"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/scale" />
+
+    <Button
+        android:id="@+id/buttonMove"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/move" />
+
+    <Button
+        android:id="@+id/buttonAlpha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/alpha" />
+</LinearLayout>

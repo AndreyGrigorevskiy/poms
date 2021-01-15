@@ -34,4 +34,9 @@
     <string name="result">Your result: </string>
     <string name="ServicesAndIntentions">Services and intentions</string>
     <string name="counted_to"> to %d</string>
+    <string name="rotate">Rotate</string>
+    <string name="scale">Scale</string>
+    <string name="move">Move</string>
+    <string name="alpha">Alpha</string>
+    <string name="anim">Animation</string>
 </resources>

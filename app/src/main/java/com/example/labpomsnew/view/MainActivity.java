@@ -106,6 +106,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Intent intentSPA = new Intent(this, SharedPreferencesActivity.class);
                 startActivity(intentSPA);
                 break;
+            case R.id.anim:
+                Intent intentAnim = new Intent(this, AnimationActivity.class);
+                startActivity(intentAnim);
+                break;
+
         }
 
 
@@ -133,6 +138,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.buttonSwitchFragment:
                 menu.add(0,0,0,R.string.history);
                 menu.add(0,1,0,R.string.ServicesAndIntentions);
+
         }
     }
 
