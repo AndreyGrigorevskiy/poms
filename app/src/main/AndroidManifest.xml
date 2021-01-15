@@ -12,13 +12,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SharedPreferencesActivity"></activity>
-        <activity android:name=".DataBaseActivity" />
-        <activity android:name=".FileActivity" />
-        <activity android:name=".CallCatcher" />
+        <activity android:name=".view.SharedPreferencesActivity"></activity>
+        <activity android:name=".view.DataBaseActivity" />
+        <activity android:name=".view.FileActivity" />
+        <activity android:name=".view.CallCatcher" />
         <activity
-            android:name=".ServicesAndIntentionsActivity"
-            android:parentActivityName=".MainActivity">
+            android:name=".view.ServicesAndIntentionsActivity"
+            android:parentActivityName=".view.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.SEND" />
 
@@ -27,7 +27,7 @@
                 <data android:mimeType="text/plain" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity">
+        <activity android:name=".view.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -35,19 +35,19 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".TwoFragmentsActivity"
+            android:name=".view.TwoFragmentsActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme"
             android:windowSoftInputMode="stateHidden" />
         <activity
-            android:name=".HistoryActivity"
+            android:name=".view.HistoryActivity"
             android:screenOrientation="portrait"
             android:supportsRtl="true"
             android:theme="@style/AppTheme"
             android:windowSoftInputMode="stateHidden" />
 
         <service
-            android:name=".CounterService"
+            android:name=".viewmodel.CounterService"
             android:enabled="true"
             android:exported="true" />
     </application>

@@ -1,11 +1,12 @@
-package com.example.labpomsnew;
+package com.example.labpomsnew.view;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
+
+import com.example.labpomsnew.R;
+import com.example.labpomsnew.viewmodel.HistoryFacade;
 
 public class DataBaseActivity extends AppCompatActivity {
 
@@ -35,20 +36,19 @@ public class DataBaseActivity extends AppCompatActivity {
 
     private void showDateBase() {
 
-        dbContent.setText(dataBaseManager.getAllAsText());
-
+        //6-я лаба = dbContent.setText(dataBaseManager.getAllAsText());
+        dbContent.setText(HistoryFacade.getAllAsString(getBaseContext()));
     }
 
     private void clearDateBase()
     {
 
-        dataBaseManager.deleteAll();
-
+        // 6 = dataBaseManager.deleteAll();
+        HistoryFacade.deleteAll(getBaseContext());
     }
 
     private void clearScreenDateBase()
     {
-
         dbContent.setText("");
 
     }

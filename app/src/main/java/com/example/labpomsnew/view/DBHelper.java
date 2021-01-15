@@ -1,4 +1,4 @@
-package com.example.labpomsnew;
+package com.example.labpomsnew.view;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;

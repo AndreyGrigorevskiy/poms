@@ -1,8 +1,10 @@
-package com.example.labpomsnew;
+package com.example.labpomsnew.view;
 
 import android.os.Bundle;
 import android.preference.PreferenceFragment;
 import android.support.annotation.Nullable;
+
+import com.example.labpomsnew.R;
 
 public class SharedPreferenceFragment extends PreferenceFragment {
 

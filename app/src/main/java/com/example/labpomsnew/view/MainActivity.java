@@ -1,4 +1,4 @@
-package com.example.labpomsnew;
+package com.example.labpomsnew.view;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -6,7 +6,6 @@ import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
-import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.view.ContextMenu;
 import android.view.Menu;
@@ -14,6 +13,10 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.FrameLayout;
+
+import com.example.labpomsnew.R;
+import com.example.labpomsnew.model.HistoryEntry;
+import com.example.labpomsnew.viewmodel.HistoryFacade;
 
 import java.util.ArrayList;
 
@@ -210,5 +213,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         dataBaseManager.open();
         dataBaseManager.insert(newItem);
         dataBaseManager.close();
+    }
+
+    public void addToHist(HistoryEntry newItem){
+        HistoryFacade.addItem(getBaseContext(), newItem);
     }
 }

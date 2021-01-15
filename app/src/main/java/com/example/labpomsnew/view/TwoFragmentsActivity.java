@@ -1,10 +1,12 @@
-package com.example.labpomsnew;
+package com.example.labpomsnew.view;
 
 import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.FrameLayout;
+
+import com.example.labpomsnew.R;
 
 public class TwoFragmentsActivity extends AppCompatActivity {
 

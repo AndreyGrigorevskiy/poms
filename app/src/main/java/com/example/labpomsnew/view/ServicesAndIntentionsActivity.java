@@ -1,4 +1,4 @@
-package com.example.labpomsnew;
+package com.example.labpomsnew.view;
 
 import android.Manifest;
 import android.app.PendingIntent;
@@ -12,12 +12,15 @@ import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.Toast;
+
+import com.example.labpomsnew.R;
+import com.example.labpomsnew.viewmodel.CounterService;
+import com.example.labpomsnew.viewmodel.FileProcessor;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -152,7 +155,7 @@ public class ServicesAndIntentionsActivity extends AppCompatActivity implements 
                 case COUNTER_ANSWER:
                     int counter = data.getIntExtra(COUNTER_ANSWER_KEY,0);
                     progressBar.setProgress(counter);
-                    writeToFile("Counter = "+String.valueOf(counter));
+                    FileProcessor.writeToFile("Counter = "+String.valueOf(counter));
                     if(counter % 5 ==0&&counter!=0)
                     {
                         String link = browserLink.getText().toString();
@@ -161,10 +164,10 @@ public class ServicesAndIntentionsActivity extends AppCompatActivity implements 
                             Intent intent = new Intent(Intent.ACTION_VIEW);
                             intent.setData(Uri.parse(link));
                             startActivity(intent);
-                            writeToFile("open link : "+link);
+                            FileProcessor.writeToFile("open link : "+link);
                         }
                         else Toast.makeText(this,"to open the link enter https://",Toast.LENGTH_SHORT).show();
-                        writeToFile("entered string : "+link);
+                        FileProcessor.writeToFile("entered string : "+link);
                     }
 
                     Toast.makeText(this,getResources().getString(R.string.counted_to,counter), Toast.LENGTH_SHORT).show();
@@ -190,22 +193,5 @@ public class ServicesAndIntentionsActivity extends AppCompatActivity implements 
                 break;
         }
     }
-
-    private void writeToFile(String message)
-    {
-        File dowloadDir = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS);
-        File myFile = new File(dowloadDir, "logFile.txt");
-        try
-        {
-            FileWriter out = new FileWriter(myFile,true);
-            out.write(message+"\n");
-            out.close();
-        }
-        catch (IOException e)
-        {
-            e.printStackTrace();
-        }
-    }
-
 
 }

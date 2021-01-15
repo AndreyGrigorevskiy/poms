@@ -1,7 +1,6 @@
-package com.example.labpomsnew;
+package com.example.labpomsnew.view;
 
 import android.preference.PreferenceActivity;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 public class SharedPreferencesActivity extends PreferenceActivity {

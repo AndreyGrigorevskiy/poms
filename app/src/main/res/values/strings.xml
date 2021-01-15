@@ -10,7 +10,7 @@
     <string name="pref_color_switch_summ">Use non-default color from list below?</string>
     <string name="pref_color_title">Choose color</string>
     <string name="pref_color_red">Red</string>
-    <string name="app_name">Lab1POMS</string>
+    <string name="app_name">LabPOMSNew</string>
     <string name="hello">Hello, </string>
     <string name="welcome">Welcome to the app!</string>
     <string name="switchFragment">Switch fragment</string>

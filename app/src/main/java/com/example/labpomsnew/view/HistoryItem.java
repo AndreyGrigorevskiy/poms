@@ -1,9 +1,7 @@
-package com.example.labpomsnew;
+package com.example.labpomsnew.view;
 
 import android.os.Parcel;
 import android.os.Parcelable;
-
-import java.util.ArrayList;
 
 public class HistoryItem  implements Parcelable {
 
