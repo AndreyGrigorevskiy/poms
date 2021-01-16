@@ -150,7 +150,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         {
             case 0:
                 Intent intent = new Intent(this, HistoryActivity.class);
-                intent.putParcelableArrayListExtra(HISTORY_KEY,historyArray);
+                intent.putParcelableArrayListExtra(HISTORY_KEY,new ArrayList<>(HistoryFacade.getAllAsList(getBaseContext())));
                 startActivity(intent);
                 break;
             case 1:

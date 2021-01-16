@@ -62,7 +62,7 @@ public class HistoryAdapter extends RecyclerView.Adapter<HistoryAdapter.HistoryI
             historyButtonZ = itemView.findViewById(R.id.buttonZ);
         }
 
-        void bind(final HistoryItem historyItem)
+        /*void bind(final HistoryItem historyItem)
         {
             historyText.setText(historyItem.getText());
             historyButton.setOnClickListener(view -> Toast.makeText(historyButton.getContext(), historyItem.getText(), Toast.LENGTH_SHORT).show());
@@ -94,36 +94,15 @@ public class HistoryAdapter extends RecyclerView.Adapter<HistoryAdapter.HistoryI
                 }.start();
 
             });
-        }
+        }*/
+
         void bind(final HistoryEntry historyItem) {
             historyText.setText(historyItem.getTextRepresentation());
-            historyButton.setOnClickListener(view -> Toast.makeText(historyButton.getContext(), historyItem.getTextRepresentation(), Toast.LENGTH_SHORT).show());
-            /*String[] args = historyItem.getArgs();
-            String ent = String.format("You entered: %1s %2s\n", args[0], args[1]);
-            String res = String.format("Your result: %1s", args[2]);
-            historyButtonZ.setOnClickListener(v -> {
-
-                Spannable spannableString = new SpannableString(ent + res);
-                Spannable span = new SpannableString(ent + res);
-                CountDownTimer countDownTimer = new CountDownTimer(4000, 1000) {
-                    @Override
-                    public void onTick(long millisUntilFinished) {
-                        if (millisUntilFinished >= 2000) {
-                            spannableString.setSpan(new StyleSpan(Typeface.BOLD), 0, ent.length() - 1, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
-                            historyText.setText(spannableString);
-                        } else {
-                            span.setSpan(new StyleSpan(Typeface.BOLD), ent.length(), res.length() + ent.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
-                            historyText.setText(span);
-                        }
-                    }
-
-                    @Override
-                    public void onFinish() {
-                        historyText.setText(historyItem.getText());
-                    }
-                }.start();
-
-            });*/
+            historyButton.setOnClickListener(v ->
+                    Toast.makeText(historyButton.getContext(),
+                            historyItem.getTextRepresentation(),
+                            Toast.LENGTH_SHORT)
+                            .show());
         }
 
     }
