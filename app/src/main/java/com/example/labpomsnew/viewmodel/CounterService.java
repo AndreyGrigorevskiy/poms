@@ -15,8 +15,6 @@ public class CounterService extends Service {
     MyTask myTask;
 
 
-
-
     @Nullable
     @Override
     public IBinder onBind(Intent intent) {

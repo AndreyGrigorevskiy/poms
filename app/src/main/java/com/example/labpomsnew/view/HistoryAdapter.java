@@ -62,7 +62,7 @@ public class HistoryAdapter extends RecyclerView.Adapter<HistoryAdapter.HistoryI
             historyButtonZ = itemView.findViewById(R.id.buttonZ);
         }
 
-       /* void bind(final HistoryItem historyItem)
+        void bind(final HistoryItem historyItem)
         {
             historyText.setText(historyItem.getText());
             historyButton.setOnClickListener(view -> Toast.makeText(historyButton.getContext(), historyItem.getText(), Toast.LENGTH_SHORT).show());
@@ -94,7 +94,7 @@ public class HistoryAdapter extends RecyclerView.Adapter<HistoryAdapter.HistoryI
                 }.start();
 
             });
-        }*/
+        }
         void bind(final HistoryEntry historyItem) {
             historyText.setText(historyItem.getTextRepresentation());
             historyButton.setOnClickListener(view -> Toast.makeText(historyButton.getContext(), historyItem.getTextRepresentation(), Toast.LENGTH_SHORT).show());

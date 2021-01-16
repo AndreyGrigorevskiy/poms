@@ -41,7 +41,6 @@ public class FileActivity extends AppCompatActivity {
     private void clearFile()
     {
         FileProcessor.clearFile();
-
     }
 
 
